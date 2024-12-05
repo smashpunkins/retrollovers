@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Retrolovers - Venta de Videojuegos y Consolas Retro</title>
+    <link rel="stylesheet" href="CSS/estilos.css"> 
+</head>
+<body id="venta-videojuegos">
+
+<header class="header">
+  <h1 class="header__titulo">Retrolovers</h1>
+  <nav class="nav">
+    <a class="nav__link" href="index.html">Página de Inicio</a>
+        <a class="nav__link" href="servicios-mantenimiento.html">Servicios de Mantenimiento y Reparación</a>
+        <a class="nav__link" href="venta-videojuegos.html">Venta de Videojuegos y Consolas Retro</a>
+        <a class="nav__link" href="modificacion-consolas.html">Servicios de Modificación de Consolas Retro</a>
+        <a class="nav__link" href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="video-container">
+        <video controls>
+            <source src="video-placeholder.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+
+    <h2 class="subtitle">Venta de Videojuegos y Consolas Retro</h2>
+    <p>En Retrolovers, ofrecemos una amplia gama de videojuegos y consolas retro a través de nuestro catálogo. Desde clásicos atemporales hasta consolas icónicas, tenemos todo lo que necesitas para revivir tus recuerdos. Para realizar un pedido, consulta nuestro catálogo y envíanos tus solicitudes.</p>
+
+    <h3>Consolas Disponibles</h3>
+    <div class="service-card">
+        <img class="service-image" src="playstation1.jpg" alt="PlayStation 1">
+        <img class="service-image" src="playstation2.jpg" alt="PlayStation 2">
+        <img class="service-image" src="gameboy.jpg" alt="Game Boy">
+        <img class="service-image" src="xbox.jpg" alt="Xbox">
+    </div>
+
+    <h3>Videojuegos Disponibles</h3>
+    <div class="service-card">
+        <img class="service-image" src="super-mario.jpg" alt="Super Mario">
+        <img class="service-image" src="zelda.jpg" alt="The Legend of Zelda">
+        <img class="service-image" src="sonic.jpg" alt="Sonic the Hedgehog">
+        <img class="service-image" src="mortal-kombat.jpg" alt="Mortal Kombat">
+    </div>
+
+    <div class="repair-info-section">
+        <h3 class="repair-info__titulo">Solicitud de Información <span></span></h3>
+        <p class="repair-info__texto">Por favor, completa el siguiente formulario para solicitar más información sobre el producto seleccionado o para realizar un pedido a través de nuestro catálogo.</p>
+        <form class="formulario-comun" action="enviar-pedido.php" method="post">
+            <div class="form-group">
+                <label class="form-label" for="nombre">Nombre:</label>
+                <input class="form-input" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input" type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="telefono">Teléfono:</label>
+                <input class="form-input" type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="mensaje">Mensaje:</label>
+                <textarea class="form-textarea" id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <input class="form-submit" type="submit" value="Enviar Solicitud">
+        </form>
+    </div>
+</main>
+
+<footer class="footer">
+    <nav>
+        <a class="footer__link" href="index.html">Página de Inicio</a>
+        <a class="footer__link" href="servicios-mantenimiento.html">Servicios de Mantenimiento y Reparación</a>
+        <a class="footer__link" href="venta-videojuegos.html">Venta de Videojuegos y Consolas Retro</a>
+        <a class="footer__link" href="modificacion-consolas.html">Servicios de Modificación de Consolas Retro</a>
+        <a class="footer__link" href="contacto.html">Contacto</a>
+    </nav>
+    <div>
+        &copy; 2024 - Desarrollado por Eduardo Supelano
+    </div>
+    <div>
+        <h3>Síguenos en:</h3>
+        <a href="https://www.facebook.com/retrolovers" target="_blank">FB</a>
+        <a href="https://www.instagram.com/retrolovers" target="_blank">IG</a>
+        <a href="https://twitter.com/retrolovers" target="_blank">TW</a>
+        <a href="https://www.youtube.com/retrolovers" target="_blank">YT</a>
+    </div>
+</footer>
+
+</body>
+</html>
+

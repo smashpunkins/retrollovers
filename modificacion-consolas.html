@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Retrolovers - Servicios de Modificación de Consolas Retro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body id="modificacion-consolas" class="body">
+
+<header class="header">
+    <h1 class="header__titulo">Retrolovers</h1>
+    <nav class="nav">
+        <a class="nav__link" href="index.html">Página de Inicio</a>
+        <a class="nav__link" href="servicios-mantenimiento.html">Servicios de Mantenimiento y Reparación</a>
+        <a class="nav__link" href="venta-videojuegos.html">Venta de Videojuegos y Consolas Retro</a>
+        <a class="nav__link" href="modificacion-consolas.html">Servicios de Modificación de Consolas Retro</a>
+        <a class="nav__link" href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<main class="main">
+    <!-- Sección de video -->
+    <section id="video" class="section section--video">
+        <div class="video__placeholder">Placeholder para Video</div>
+    </section>
+
+    <h2 class="subtitle">Servicios de Modificación de Consolas Retro</h2>
+    <p>En Retrolovers, ofrecemos servicios especializados para modificar consolas retro. Nuestro equipo de expertos trabaja en mejorar el rendimiento y la funcionalidad de tus consolas favoritas. Desde cambios de carcasa hasta mejoras en la pantalla, estamos aquí para ayudarte a disfrutar al máximo de tu experiencia de juego.</p>
+
+    <h3 class="consolas__titulo">Consolas que Modificamos</h3>
+    <div class="consolas-imagenes flex-container">
+        <img src="wii.jpg" alt="Wii" class="consola-imagen">
+        <img src="gameboy-advance.jpg" alt="Game Boy Advance" class="consola-imagen">
+        <img src="gameboy.jpg" alt="Game Boy" class="consola-imagen">
+        <img src="playstation.jpg" alt="PlayStation" class="consola-imagen">
+        <img src="xbox.jpg" alt="Xbox" class="consola-imagen">
+    </div>
+
+    <h3 class="how-it-works__titulo">Cómo Funciona</h3>
+    <div class="informacion-funcionamiento">
+        <p>Para enviar tu consola para modificación, completa el siguiente formulario. Asegúrate de seleccionar la opción de modificación que deseas. Nos pondremos en contacto contigo para discutir los detalles y ofrecerte un presupuesto.</p>
+    </div>
+
+   <div class="formulario-modificacion">
+    <h3 class="form-title">Solicitud de Modificación</h3>
+    <form action="enviar-modificacion.php" method="post" class="formulario-comun">
+        <div class="form-group">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required class="form-input">
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" required class="form-input">
+        </div>
+        <div class="form-group">
+            <label for="telefono" class="form-label">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required class="form-input">
+        </div>
+        <div class="form-group">
+            <label for="modificacion" class="form-label">Opción de Modificación:</label>
+            <select id="modificacion" name="modificacion" required class="form-input">
+                <option value="">Selecciona...</option>
+                <option value="cambio_carcasas_wii">Cambio de carcasa para Wii</option>
+                <option value="cambio_carcasas_gba">Cambio de carcasa para Game Boy Advance</option>
+                <option value="bateria_recargable_gba">Cambio a batería recargable para Game Boy Advance</option>
+                <option value="pantalla_ips_gba">Cambio a pantalla IPS para Game Boy Advance</option>
+                <option value="bateria_recargable_gb">Cambio a batería recargable para Game Boy</option>
+                <option value="pantalla_ips_gb">Cambio a pantalla IPS para Game Boy</option>
+                <option value="skins_ps">Skins para PlayStation</option>
+                <option value="skins_xbox">Skins para Xbox</option>
+            </select>
+        </div>
+        <input class="form-submit" type="submit" value="Enviar Solicitud">
+    </form>
+</div>
+
+            </div>
+            <div class="flex-item">
+                <input type="submit" value="Enviar Solicitud" class="form-submit">
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer class="footer">
+    <nav>
+        <a class="footer__link" href="index.html">Página de Inicio</a>
+        <a class="footer__link" href="servicios-mantenimiento.html">Servicios de Mantenimiento y Reparación</a>
+        <a class="footer__link" href="venta-videojuegos.html">Venta de Videojuegos y Consolas Retro</a>
+        <a class="footer__link" href="modificacion-consolas.html">Servicios de Modificación de Consolas Retro</a>
+        <a class="footer__link" href="contacto.html">Contacto</a>
+    </nav>
+    <div>
+        &copy; 2024 - Desarrollado por Eduardo Supelano
+    </div>
+    <div>
+        <h3>Síguenos en:</h3>
+        <a href="https://www.facebook.com/retrolovers" target="_blank">FB</a>
+        <a href="https://www.instagram.com/retrolovers" target="_blank">IG</a>
+        <a href="https://twitter.com/retrolovers" target="_blank">TW</a>
+        <a href="https://www.youtube.com/retrolovers" target="_blank">YT</a>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+

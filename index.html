@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Retrolovers - Página Principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body id="proyecto-retrolovers">
+
+<header class="header">
+    <h1 class="header__titulo">Retrolovers</h1>
+    <nav class="nav">
+        <a href="index.html" class="nav__link">Página de Inicio</a>
+        <a href="servicios-mantenimiento.html" class="nav__link">Servicios de Mantenimiento y Reparación</a>
+        <a href="venta-videojuegos.html" class="nav__link">Venta de Videojuegos y Consolas Retro</a>
+        <a href="modificacion-consolas.html" class="nav__link">Servicios de Modificación de Consolas Retro</a>
+        <a href="contacto.html" class="nav__link">Contacto</a>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="video-container">
+        <video controls class="video">
+            <source src="Imagenes/Video/videoportada1.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div class="overlay">Modificación de Consolas</div>
+    </div>
+
+    <section id="servicios" class="section">
+        <h2 class="subtitle">Servicios Disponibles</h2>
+        <div class="service-card">
+            <img src="Imagenes/mantenimientodecosolas.webp" alt="Servicio de Mantenimiento" class="service-image">
+            <div class="service-info">
+                <h3>Servicios de Mantenimiento y Reparación</h3>
+                <p>Realizamos mantenimiento preventivo y correctivo a consolas retro, asegurando que funcionen de manera óptima. Nuestro servicio incluye limpieza interna y externa, así como reemplazo de piezas dañadas.</p>
+            </div>
+            <button onclick="window.location.href='servicios-mantenimiento.html'" class="service-button">Más Información</button>
+        </div>
+
+        <div class="service-card">
+            <img src="Imagenes/ventasvideojuegos.jpg" alt="Venta de Videojuegos" class="service-image">
+            <div class="service-info">
+                <h3>Venta de Videojuegos y Consolas Retro</h3>
+                <p>Ofrecemos un servicio especializado en la venta de videojuegos y consolas retro. Contamos con una amplia selección de títulos y consolas originales.</p>
+            </div>
+            <button onclick="window.location.href='venta-videojuegos.html'" class="service-button">Más Información</button>
+        </div>
+
+        <div class="service-card">
+            <img src="Imagenes/consolemodd.jpg" alt="Modificación de Consolas" class="service-image">
+            <div class="service-info">
+                <h3>Servicios de Modificación de Consolas Retro</h3>
+                <p>Nuestros expertos realizan modificaciones en consolas retro para mejorar su rendimiento y funcionalidad. Desde actualizaciones de software hasta modificaciones de hardware, tenemos la solución perfecta para ti.</p>
+            </div>
+            <button onclick="window.location.href='modificacion-consolas.html'" class="service-button">Más Información</button>
+        </div>
+    </section>
+
+    <section id="suscripcion" class="section">
+        <h2 class="subtitle">Suscríbete a nuestro Newsfeed</h2>
+        <form action="enviar-suscripcion.php" method="post" class="formulario-comun">
+            <div class="form-group">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" required class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="modo-contacto" class="form-label">Modo Preferido de Contacto:</label>
+                <select id="modo-contacto" name="modo-contacto" required class="form-input">
+                    <option value="email">Email</option>
+                    <option value="telefono">Teléfono</option>
+                    <option value="whatsapp">Whatsapp</option>
+                </select>
+            </div>
+            <input type="submit" value="Suscribirse" class="service-button">
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <nav>
+        <a class="footer__link" href="index.html">Página de Inicio</a>
+        <a class="footer__link" href="servicios-mantenimiento.html">Servicios de Mantenimiento y Reparación</a>
+        <a class="footer__link" href="venta-videojuegos.html">Venta de Videojuegos y Consolas Retro</a>
+        <a class="footer__link" href="modificacion-consolas.html">Servicios de Modificación de Consolas Retro</a>
+        <a class="footer__link" href="contacto.html">Contacto</a>
+    </nav>
+    <div>
+        &copy; 2024 - Desarrollado por Eduardo Supelano
+    </div>
+    <div>
+        <h3>Síguenos en:</h3>
+        <a href="https://www.facebook.com/retrolovers" target="_blank">FB</a>
+        <a href="https://www.instagram.com/retrolovers" target="_blank">IG</a>
+        <a href="https://twitter.com/retrolovers" target="_blank">TW</a>
+        <a href="https://www.youtube.com/retrolovers" target="_blank">YT</a>
+    </div>
+</footer>
+
+</body>
+</html>
+

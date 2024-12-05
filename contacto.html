@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Retrolovers - Contacto</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body id="proyecto-retrolovers">
+
+<header class="header">
+    <h1 class="header__titulo">Retrolovers</h1>
+    <nav class="nav">
+        <a href="index.html" class="nav__link">Página de Inicio</a>
+        <a href="servicios-mantenimiento.html" class="nav__link">Servicios de Mantenimiento y Reparación</a>
+        <a href="venta-videojuegos.html" class="nav__link">Venta de Videojuegos y Consolas Retro</a>
+        <a href="modificacion-consolas.html" class="nav__link">Servicios de Modificación de Consolas Retro</a>
+        <a href="contacto.html" class="nav__link">Contacto</a>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="video-container" id="video-placeholder">
+        Video placeholder
+    </div>
+
+    <section id="registro" class="section">
+        <h2>Regístrate para nuestro Newsfeed</h2>
+        <form action="enviar-suscripcion.php" method="post" class="formulario-comun">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="modo-contacto">Método Preferido de Contacto:</label>
+                <select id="modo-contacto" name="modo-contacto" class="form-input" required>
+                    <option value="email">Email</option>
+                    <option value="telefono">Teléfono</option>
+                    <option value="whatsapp">Whatsapp</option>
+                </select>
+            </div>
+
+            	<input type="submit" value="Suscribirse" class="form-submit">
+        </form>
+    </section>
+
+    <section id="redes-sociales" class="section social-media">
+        <h3>Síguenos en:</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/retrolovers" target="_blank">
+                <img src="placeholder-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/retrolovers" target="_blank">
+                <img src="placeholder-instagram.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/retrolovers" target="_blank">
+                <img src="placeholder-twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/retrolovers" target="_blank">
+                <img src="placeholder-youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <nav>
+        <a class="footer__link" href="index.html">Página de Inicio</a>
+        <a class="footer__link" href="servicios-mantenimiento.html">Servicios de Mantenimiento y Reparación</a>
+        <a class="footer__link" href="venta-videojuegos.html">Venta de Videojuegos y Consolas Retro</a>
+        <a class="footer__link" href="modificacion-consolas.html">Servicios de Modificación de Consolas Retro</a>
+        <a class="footer__link" href="contacto.html">Contacto</a>
+    </nav>
+    <div>
+        &copy; 2024 - Desarrollado por Eduardo Supelano
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+

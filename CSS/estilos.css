@@ -1,0 +1,418 @@
+/* Importación de fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* Definición de variables de color y espaciado */
+:root {
+    --color-principal: #E6E6FA; /* Lavanda Muy Claro */
+    --color-secundario: #D1C4E9; /* Púrpura Claro */
+    --fondo: #FFFFFF; /* Blanco */
+    --texto: #2C3E50; /* Gris Oscuro */
+    --destacado: #B39DDB; /* Púrpura Pastel */
+    --padding-base: 10px;
+    --padding-large: 20px;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el header y footer */
+.header, .footer {
+    background-color: var(--color-principal);
+    text-align: center;
+    padding: var(--padding-large);
+}
+
+.header__titulo {
+    font-family: 'Roboto', sans-serif; /* Cambiado a Roboto */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilos del menú de navegación */
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav__link {
+    color: var(--texto);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav__link:hover {
+    background-color: var(--destacado);
+    color: var(--texto);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav__link:focus {
+    outline: 2px solid var(--destacado);
+}
+
+/* Estilos del contenedor principal */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: var(--padding-large);
+    background-color: var(--fondo);
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el video */
+.video-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del texto superpuesto */
+.video-container .overlay {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 204px;
+}
+
+/* Estilo del subtítulo */
+.subtitle {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+/* Estilo de las tarjetas de servicio */
+.service-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: var(--padding-large);
+    border: 1px solid var(--color-secundario);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.service-image {
+    max-width: 120px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Estilos comunes para botones */
+.service-button, .form-submit {
+    background-color: var(--color-principal);
+    color: var(--texto);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.service-button:hover, .form-submit:hover {
+    background-color: var(--color-secundario);
+}
+
+.service-button:focus, .form-submit:focus {
+    outline: 2px solid var(--destacado);
+}
+
+/* Estilos para la sección de Información de Reparación */
+.repair-info-section {
+    background-color: #f8f9fa;
+    padding: var(--padding-large);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.repair-info__titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.repair-info__texto {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Estilos comunes para formularios */
+.formulario-comun {
+    background-color: white;
+    border: 1px solid var(--color-secundario);
+    border-radius: 8px;
+    padding: var(--padding-large);
+    margin: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--texto);
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-secundario);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: var(--destacado);
+    outline: none;
+}
+
+.form-textarea {
+    height: 100px;
+}
+
+/* Estilos para los formularios (igualar tamaño y estilo) */
+.formulario-comun input,
+.formulario-comun textarea {
+    width: calc(100% - 20px); /* Ajustar el ancho total restando el padding */
+    padding: 10px; /* Igualar padding */
+    border: 1px solid var(--color-secundario);
+    border-radius: 4px;
+}
+
+/* Estilos de pie de página */
+.footer {
+	justify-content: center; /* Centra los elementos horizontalmente */
+    font-size: 0.9em;
+    padding-bottom: 80px;
+    background-color: var(--color-principal);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer__links {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos pasen a una nueva línea */
+    justify-content: center;
+    gap: 10px; /* Espaciado uniforme entre botones */
+    margin-bottom: 10px;
+}
+
+.footer__link:hover {
+    background-color: var(--destacado);
+    color: var(--texto);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer__link:focus {
+    outline: 2px solid var(--destacado);
+}
+
+.footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Breakpoint para 480px */
+@media (max-width: 480px) {
+    /* Cambiar el tamaño del título en el header */
+    .header__titulo {
+        font-size: 1.8em;
+    }
+
+    /* Ajustar el padding de los enlaces de navegación */
+    .nav__link {
+        padding: 8px 10px;
+        margin-left: 0;
+    }
+
+    /* Cambiar el layout del menú de navegación a columna */
+    .nav {
+        flex-direction: column;
+    }
+
+    /* Apilar las tarjetas de servicio verticalmente */
+    .service-card {
+        flex-direction: column;
+        font-size: 0.9em;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Hacer que las imágenes de las tarjetas de servicio se adapten */
+    .service-image {
+        max-width: 100px;
+    }
+
+    /* Formularios */
+    .formulario-comun {
+        width: 95%; /* Hacer que el formulario ocupe casi todo el ancho */
+        padding: 10px;
+    }
+
+    .form-input, .form-submit {
+        font-size: 0.85em;
+        padding: 8px;
+    }
+
+    /* Asegurar que los videos ocupen el ancho completo */
+    .video-container {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    /* Reducir el padding y tamaño del footer */
+    .footer {
+        font-size: 0.8em;
+        padding: 15px;
+    }
+
+    .footer__link {
+        padding: 8px 10px;
+    }
+}
+
+/* Breakpoint para 768px */
+@media (max-width: 768px) {
+    /* Cambiar la dirección del layout del menú de navegación */
+    .nav {
+        flex-direction: column;
+    }
+
+    /* Ajustar el tamaño del título del header */
+    .header__titulo {
+        font-size: 1.5em;
+    }
+
+    /* Cambiar el padding y el margin de los enlaces de navegación */
+    .nav__link {
+        font-size: 0.9em;
+        padding: 8px 12px;
+        margin: 5px 0;
+    }
+
+    /* Formularios */
+    .formulario-comun {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-input, .form-submit {
+        font-size: 0.9em;
+    }
+
+    /* Hacer que las imágenes de las tarjetas de servicio sean más pequeñas */
+    .service-image {
+        max-width: 120px;
+    }
+
+    /* Hacer que los videos ocupen el ancho completo */
+    .video-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 0.85em;
+        padding: 18px;
+    }
+
+    .footer__links {
+        justify-content: center;
+    }
+}
+
+/* Breakpoint para 1024px */
+@media (max-width: 1024px) {
+    .nav {
+        justify-content: space-around;
+    }
+
+    /* Ajustar el tamaño del título en el header */
+    .header__titulo {
+        font-size: 2.5em;
+    }
+
+    /* Modificar los márgenes de las tarjetas de servicio */
+    .service-card {
+        font-size: 1em;
+        margin: 10px;
+    }
+
+    /* Ajustar el tamaño de las imágenes de las tarjetas */
+    .service-image {
+        max-width: 150px;
+    }
+
+    /* Formularios */
+    .formulario-comun {
+        max-width: 600px; /* Limitar el tamaño del formulario */
+        margin: 20px auto;
+    }
+
+    .form-input, .form-submit {
+        font-size: 1em;
+    }
+
+    /* Asegurar que los videos tengan un tamaño adecuado */
+    .video-container {
+        max-width: 90%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        align-items: center; /* Centra el contenido verticalmente */
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 1em;
+        padding: 20px;
+    }
+}
+
